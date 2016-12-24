@@ -1,3 +1,16 @@
+# running
+`launcher.sh` which is
+```
+#!/bin/sh
+cd /
+cd home/pi/amazon-echo-ha-bridge
+mvn spring-boot:run > out.txt
+cd /
+```
+
+`sudo crontab -e`
+`@reboot /home/pi/amazon-echo-ha-bridge/launcher.sh`
+
 # Amazon Echo Bridge &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![codeship status](https://codeship.com/projects/998e16f0-ca03-0132-6689-76c03995407a/status?branch=master)
 
 Amazon Echo Bridge allows you to quickly emulate a Phillips Hue bridge, bringing the ability to seamlessly integrate an Amazon Echo into various home automation systems.  
